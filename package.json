@@ -1,0 +1,48 @@
+{
+  "name": "quantlibxl",
+  "description": "QuantLibXL for Node.js",
+  "version": "0.1.0",
+  "keywords": [
+    "quantlib"
+  ],
+  "main": "lib/quantlibxl.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quantlabio/quantlibxl.git"
+  },
+  "directories": {
+    "build": "./build",
+    "lib": "./lib"
+  },
+  "engines": {
+    "node": ">= 0.12"
+  },
+  "bundledDependencies": [
+    "node-pre-gyp"
+  ],
+  "dependencies": {
+    "fs-extra": "~0.26.2",
+    "node-pre-gyp": "~0.6.15",
+    "promisify-node": "~0.3.0"
+  },
+  "devDependencies": {
+    "nan": "^2.2.0",
+    "node-gyp": "~3.0.3"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "postinstall": "node-pre-gyp install"
+  },
+  "binary": {
+    "module_name": "quantlibxl",
+    "module_path": "./build/Release/quantlibxl.node",
+    "host": "https://github.com",
+    "package_name": "{platform}-{arch}.tar.gz",
+    "remote_path": "./quantlibxl/quantlibxl/releases/download/v{version}/"
+  },
+  "bugs": {
+        "url": "http://github.com/quantlabio/quantlibxl/issues"
+  },
+  "author": "QuantLab",
+  "license": "MIT"
+}
