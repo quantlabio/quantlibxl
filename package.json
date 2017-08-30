@@ -38,7 +38,7 @@
     "module_path": "./build/Release/quantlibxl.node",
     "host": "https://github.com",
     "package_name": "{platform}-{arch}.tar.gz",
-    "remote_path": "./quantlibxl/quantlibxl/releases/download/v{version}/"
+    "remote_path": "./quantlabio/quantlibxl/releases/download/v{version}/"
   },
   "bugs": {
         "url": "http://github.com/quantlabio/quantlibxl/issues"
